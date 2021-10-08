@@ -38,9 +38,18 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@testing-library/react": "12.1.2"
+      },
       "peerDependencies": {}
-    }
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": true,
+    "installFromBitDevRegistry": true,
+    "savePrefix": ""
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your
@@ -57,7 +66,7 @@
       /**
        * uncomment to apply the chosen environment on all components.
        **/
-       "teambit.react/react": { }
+      "teambit.react/react": {}
     }
   }
 }
