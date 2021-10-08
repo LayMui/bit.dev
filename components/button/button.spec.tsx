@@ -3,8 +3,8 @@ import { render } from '@testing-library/react'
 
 import { BasicButton } from './button.composition'
 
-it('should redner with the correct text', () => {
+it('should render with the correct text', () => {
     const { getByText } = render(<BasicButton/>);
-    const rendered = getByText('click me');
+    const rendered = getByText('Click me please!');
     expect(rendered).toBeTruthy();
 })
