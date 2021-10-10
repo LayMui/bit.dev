@@ -14,7 +14,7 @@ cd bit-install
 
 - behind the scene include yarn or npm react installation
 
-4. ```bit add componenents/button --namespace ui```
+4. ```bit add components/button --namespace ui```
 
 - bit add will track your directory as a component
 - namespace a way for you to organized and sort components in subdirectory written in bit
