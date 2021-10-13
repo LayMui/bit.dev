@@ -7,5 +7,5 @@ export function Button() {
         // or you can send to backend
       };
        
-    return <button data-testid="button" onClick={handleSubmit} type="submit">Click me please!</button>
+    return <button style={{background: 'teal', color: 'white'}} data-testid="button" onClick={handleSubmit} type="submit">Click me please!</button>
 }
