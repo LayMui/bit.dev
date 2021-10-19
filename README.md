@@ -65,3 +65,9 @@ Composition
 
 reference: https://harmony-docs.bit.dev/
 
+11. https://github.com/testing-library/eslint-plugin-testing-library
+https://kentcdodds.com/blog/common-mistakes-with-react-testing-library
+Install the 2 plugins
+bit install eslint
+bit install eslint-plugin-testing-library
+

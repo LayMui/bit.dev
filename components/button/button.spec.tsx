@@ -4,6 +4,9 @@ import { render, screen, fireEvent, getByText, waitFor } from '@testing-library/
 import { BasicButton } from './button.composition'
 import { Button } from './button';
 
+import { Alert } from 'react-native'
+
+
 
 it('should render with the correct text', () => {
     const { getByText } = render(<BasicButton/>);
@@ -15,10 +18,11 @@ it('should render with the correct text', () => {
 it('should interact with the button', async () => {
     const action = jest.fn();
         render(<Button/>);
-    const button = screen.getByTestId('button')    
+  //  const button = screen.getByTestId('button')   
+    const button = screen.getByRole("button")   
     fireEvent.click(button)
-
-   // expect(screen.getByRole("alert")).toHaveTextContent('you have clicked submit');
+    
+ //   expect(screen.getByRole("alert")).toHaveTextContent('you have clicked submit');
     expect(screen.getByRole("button")).toHaveTextContent('Click me please!');
-  //  expect(alert).toBeCalled();
+   // expect(Alert.alert).toHaveBeenCalled()
 })

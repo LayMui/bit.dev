@@ -39,7 +39,10 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@testing-library/react": "12.1.2"
+        "@testing-library/react": "12.1.2",
+        "eslint": "8.0.1",
+        "eslint-plugin-testing-library": "4.12.4",
+        "react-native": "0.66.1"
       },
       "peerDependencies": {}
     },
